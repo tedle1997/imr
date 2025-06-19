@@ -5,6 +5,8 @@ add_subdirectory(13_compute_triangle)
 add_subdirectory(14_compute_cube)
 add_subdirectory(15_compute_cubes)
 add_subdirectory(20_graphics_pipeline)
+add_subdirectory(21_directional_light_plane)
+add_subdirectory(22_shadow_mapping)
 
 add_subdirectory(present_from_buffer)
 add_subdirectory(present_from_image)

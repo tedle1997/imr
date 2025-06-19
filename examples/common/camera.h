@@ -5,6 +5,9 @@
 #include "nasl/nasl.h"
 #include "nasl/nasl_mat.h"
 
+// Forward declaration
+struct GLFWwindow;
+
 using namespace nasl;
 
 typedef struct {
@@ -34,6 +37,7 @@ typedef struct {
     } keys;
 } CameraInput;
 
+void camera_update(GLFWwindow* handle, CameraInput* input);
 bool camera_move_freelook(Camera*, CameraInput*, CameraFreelookState*, float);
 
 inline vec2 camera_scale_from_hfov(float fov, float aspect) {
